@@ -10,7 +10,11 @@
 		"autoAudits": false,
 		"checkInvalidKey": true
 	},
+<<<<<<< HEAD
+	"appid": "wxf4b38f28fd7cdc8b",
+=======
 	"appid": "wxa35c4bec2ba665b1",
+>>>>>>> 1dea67abbd4daa7f3f542a8c46779224a27098e1
 	"projectname": "theHeartSay",
 	"libVersion": "2.2.5",
 	"simulatorType": "wechat",

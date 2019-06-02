@@ -1,0 +1,31 @@
+<view class="container">
+  <view class="swiper-container">
+    <swiper class="swiper-box" indicator-dots="{{true}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item bindtap="toDetail" data-id="{{index}}">
+          <image src="{{item}}" class="slide-img"/>
+        </swiper-item>
+      </block>
+        <view class="dots">
+          <block wx:for="{{imgUrls}}" wx:key="unique">
+            <view class="dot{{index == swiperContent ? 'active' : ''}}"></view>
+          </block>
+        </view>
+    </swiper>
+  </view>
+</view>
+
+<view class="wrapper_s">
+  <view class="wrapper_a wrapper">
+    <button class="btn1" bindtap="remind" >
+      <image class="btn1_red" src="../../images/red_packet.png" />
+      5元儿童节福利
+    </button>
+  </view>
+  <view class="wrapper_b wrapper">
+    <view class="card box">收藏卡面</view>
+    <view class="card_wrapper box">
+      <image class="card_Img" src="../../images/card.png" />
+    </view>  
+  </view>
+</view>

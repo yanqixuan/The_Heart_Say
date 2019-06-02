@@ -9,6 +9,7 @@ const _ =db.command
 let dataMap = new Map()
 Page({
   data:{
+    id: 0,
     productList: {},
     productLists: [],
     buyNum: 0,
@@ -16,7 +17,12 @@ Page({
     showModal: false,
     cartList:[]
   },
-  onLoad(){
+  onLoad(options){
+    // console.log(options)
+    const id = options.id
+    this.setData({
+      id
+    })
     this.getProductData()
 // 鄢启轩写的
     wx.request({
@@ -77,19 +83,23 @@ Page({
   },
   // 贺海写的
   getProductData () {
+    const id = this.data.id
     wx.request({
       url: 'https://www.easy-mock.com/mock/5cf1f4eaabb0047e81554dd5/starbucks/productList#!method=get',
       header: {'content-type':'application/json'},
       method: 'GET',
       dataType: 'json',
       responseType: 'text',
+      data: {
+        id: 1
+      },
       success: (res) => {
         // console.log(res)
         this.setData({
-          productLists: res.data.data.productList
+          productLists: res.data.data[id].productList
         })
       },
-      fail: () => {},
+      fail: (err) => {console.log(err)},
       complete: () => {}
     });
       

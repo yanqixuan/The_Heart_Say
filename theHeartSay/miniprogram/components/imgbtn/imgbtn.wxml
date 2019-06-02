@@ -2,7 +2,7 @@
   <view class="header-title">{{item.title}}</view>
   <view class="content">
     <block wx:for="{{item.imgbtnList}}" wx:key="index" wx:for-item="list">
-      <view class="content-block" bindtap="click" id="{{list.id}}">
+      <view class="content-block" bindtap="click" data-id="{{list.id}}">
         <image src="{{list.url}}" alt="" />
         <text class="btn-text">{{list.name}}</text>
       </view>

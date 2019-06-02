@@ -1,5 +1,6 @@
 {
-    "usingComponents": {
-        "imgbtn": "../../components/imgbtn/imgbtn"
-    }
+  "usingComponents": {
+    "slideshow":"../../components/slideshow/slideshow",
+    "imgbtn": "../../components/imgbtn/imgbtn"
+  }
 }
