@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 <view class="container">
   <block wx:for="{{imgbtn}}" wx:key="index">
     <imgbtn id="imgbtn" item="{{item}}"></imgbtn>
   </block>
 </view>
-=======
-
->>>>>>> 9f25833df062ab446ff6cfaf909fd69ffc953d08

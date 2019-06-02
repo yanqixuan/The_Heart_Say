@@ -1,7 +1,6 @@
 const app = getApp()
 
 Page({
-<<<<<<< HEAD
   data:{
     imgbtn: []
   },
@@ -16,11 +15,5 @@ Page({
         })
       }
     })
-=======
-  data: {
-
-  },
-  onLoad() {
->>>>>>> 9f25833df062ab446ff6cfaf909fd69ffc953d08
   }
 })
