@@ -1,1 +1,53 @@
 /* miniprogram/pages/detail/detail.wxss */
+page {
+  /* position: relative; */
+}
+.main {
+  padding-bottom: 150rpx;
+  box-sizing: border-box;
+}
+.foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx 0 20rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-top: 1px solid #e4e4e4;
+}
+
+.foot .buy-detail {
+  flex: 1;
+  height: 100rpx;
+  letter-spacing: 4rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* display:table-cell;
+  vertical-align: bottom; */
+}
+
+.foot .buy-detail .but-num {
+  font-size: 28rpx;
+  color: #aaaaaa;
+}
+.foot .buy-detail .buy-money {
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.foot .buy.zero {
+  color: #acacac;
+  background-color: #f7f7f7;
+}
+.foot .buy {
+  width: 250rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50rpx;
+  background-color: #00a961;
+  text-align: center;
+  color: #ffffff;
+}

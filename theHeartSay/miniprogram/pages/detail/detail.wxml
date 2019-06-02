@@ -1,5 +1,9 @@
 <!--miniprogram/pages/detail/detail.wxml-->
 <view class="main">
+  <collectionScroll wx:if="{{cartList.length > 0}}" cardList="{{cartList}}"
+    bind:changeActive="changeActive" bind:likePic="likePic">
+  </collectionScroll>
+
   <block wx:for="{{productLists}}" wx:key="index">
     <productList productList="{{item}}" bindgetListNum="getListNum" catch:tap="seeDetail" data-item="{{item}}"></productList>
   </block>
