@@ -1,14 +1,3 @@
-<!-- <productList productList="{{productList}}" bindgetListNum="getListNum"></productList> -->
-<view class="main">
-  <block wx:for="{{productLists}}" wx:key="index">
-    <productList productList="{{item}}" bindgetListNum="getListNum" catch:tap="seeDetail" data-item="{{item}}"></productList>
-  </block>
-</view>
-<view class="foot">
-  <view class="buy-detail">
-    <view class="but-num">{{buyNum}}份礼物</view>
-    <view class="buy-money">￥{{buyAllPrice}}</view>
-  </view>
-  <view class="buy {{buyNum === 0 ? 'zero': ''}}">购买</view>
-</view>
-<modalDlg showModal="{{showModal}}" productList="{{productList}}"></modalDlg>
+<collectionScroll wx:if="{{cartList.length > 0}}" cardList="{{cartList}}"
+ bind:changeActive="changeActive" bind:likePic="likePic">
+</collectionScroll>

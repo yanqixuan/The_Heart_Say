@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="header">
+    <image class="header-image" src="{{activePic}}" />
+    <image bind:tap="likePic" class="headerIcon" data-like="{{like}}"
+    src="{{like ?'../../images/shoucangIcon1.png':'../../images/shoucangIcon.png'}}" />
+  </view>
+  <view class="scroll">
+    <scroll-view class="scroll" scroll-x="{{true}}">
+      <view class="scrollPic " wx:for="{{cardList}}" wx:key="key"
+       data-active="{{item.active}}" data-activepic="{{item.src}}" data-like="{{item.like}}" data-id="{{item._id}}"
+        bind:tap="active">
+        <image wx:if="{{item.active}}" class="dui" src="../../images/duihao.png" />
+        <image class="scrollPic-image {{item.active?'active':''}}" src="{{item.src}}" />
+        <image class="shoucangIcon" src="{{item.like ?'../../images/shoucangIcon1.png':'../../images/shoucangIcon.png'}}" />
+      </view>
+    </scroll-view>
+  </view>
+</view>
