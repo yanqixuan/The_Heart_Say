@@ -1,0 +1,72 @@
+Page {
+  padding: 0;
+  margin: 0;
+}
+.header{
+  margin-top: 60rpx;
+  text-align: center;
+}
+.header-image {
+  border-radius: 20rpx;
+  width: 500rpx;
+  height: 300rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 0 20rpx #818181;
+}
+.headerIcon{
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 100rpx;
+  right: 170rpx;
+  top: 330rpx;
+  padding: 10rpx;
+  box-shadow: 0 0 20rpx #818181;
+}
+.scroll {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.scrollPic {
+  position: relative;
+  padding: 20rpx;
+  display: inline-block;
+  
+  height: 200rpx;
+}
+
+.scrollPic-image {
+  border-radius: 20rpx;
+  width: 200rpx;
+  height: 150rpx;
+  box-shadow: 0 0 20rpx #818181;
+}
+.dui{
+  margin: 0;
+  padding: 10rpx;
+  border-radius: 100rpx;
+  background-color: green;
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 0;
+  top: 0; 
+}
+.shoucangIcon {
+  background-color: #fff;
+  position: absolute;
+  bottom: 40rpx;
+  right: 40rpx;
+  border-radius: 50rpx;
+  margin: 0;
+  padding: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+  box-shadow: 0 0 20rpx #818181;
+}
+
+.active {
+  border: 1px solid green;
+}

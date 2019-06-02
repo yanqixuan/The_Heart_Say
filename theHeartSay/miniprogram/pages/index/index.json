@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 {
     "usingComponents": {
         "imgbtn": "../../components/imgbtn/imgbtn"
     }
+=======
+{
+  "usingComponents": {
+   
+  }
+>>>>>>> 9f25833df062ab446ff6cfaf909fd69ffc953d08
 }

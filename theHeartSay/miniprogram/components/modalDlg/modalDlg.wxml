@@ -1,0 +1,35 @@
+<!--components/modalDlg/modalDlg.wxml-->
+<view class="mask" catchtouchstart="preventTouchMove" wx:if="{{showModal}}"></view>
+ 
+<view class="modalDlg" wx:if="{{showModal}}">
+    <view class="item-top">
+      <view class="go" bindtap="go">
+        <image src="../../assets/images/jianhao.png" />
+      </view>
+      <view class="item-img">
+        <image src="{{productList.img}}" />
+      </view>
+    </view>
+    <view class="item-detail">
+      <view class="detail-top">
+        <text >{{productList.title}}</text>
+        <text >￥{{productList.price}}</text>
+      </view>
+      <view class="detail-bottom">
+        <view class="stores">
+          <text >适用门店：</text>
+          <text > 查看全部门店</text>
+        </view>
+        <view class="times">
+          <text >可用时段：</text>
+          <text >2019.06.01-2019.06.06</text>
+        </view>
+        <view class="instructions">
+          <text >使用须知：</text>
+          <text >哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃呃踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩从踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩从踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩从踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩踩从</text>
+        </view>
+      </view>
+    </view>
+    <!-- <button bindtap="go">点我可以关掉对话框</button> -->
+</view>
+<!-- <button bindtap="submit">点我弹窗</button> -->
