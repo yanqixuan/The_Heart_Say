@@ -2,10 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/detail/detail"
-<<<<<<< HEAD
     
-=======
->>>>>>> 1dea67abbd4daa7f3f542a8c46779224a27098e1
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
