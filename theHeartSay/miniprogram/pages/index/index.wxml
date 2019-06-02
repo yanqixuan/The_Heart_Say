@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 <slideshow></slideshow>
+=======
+<view class="container">
+  <block wx:for="{{imgbtn}}" wx:key="index">
+    <imgbtn id="imgbtn" item="{{item}}"></imgbtn>
+  </block>
+</view>
+>>>>>>> 1dea67abbd4daa7f3f542a8c46779224a27098e1
