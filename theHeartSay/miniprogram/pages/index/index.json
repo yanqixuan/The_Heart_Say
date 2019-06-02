@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+    "usingComponents": {
+        "imgbtn": "../../components/imgbtn/imgbtn"
+    }
 }
