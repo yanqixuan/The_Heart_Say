@@ -1,0 +1,13 @@
+<view class="container">
+  <view wx:if="{{cartList.length>0 && complete}}">
+    <view class="collectionCard">
+      <view class="picBox" wx:for="{{cartList}}" wx:key="key">
+        <image class="collectionCard-pic" src="{{item.src}}" />
+        <view class="title">
+          {{item.title}}<image class="collectionCard-icon" src="../../images/shoucangIcon1.png" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="none" wx:if="{{!cartList.length>0 && complete}}">你还没有收藏任何卡面</view>
+</view>

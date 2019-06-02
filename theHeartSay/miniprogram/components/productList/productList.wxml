@@ -1,0 +1,29 @@
+<!-- components/productList/productList.wxml -->
+<!-- <text>components/productList/productList.wxml</text> -->
+<view class="main">
+  <view class="lists">
+    <view class="list-img">
+      <image src="{{productList.img}}" />
+    </view>
+    <view class="list-detail">
+      <text>{{productList.title}}</text>
+      <text>￥ {{productList.price}}</text>
+    </view>
+    <view class="list-add">
+      <view wx:if="{{!status}}" >
+        <image src="../../assets/images/jiahao.png" catch:tap="addList"/>
+      </view>
+      <view class="status-add" wx:if="{{status}}">
+        <view class="jianhao" catch:tap="subtractNum">
+          <image src="../../assets/images/jianhao.png" />
+        </view>
+        <view class="listNum">
+          <text >{{listNum}}</text>
+        </view>
+        <view class="jiahao-add" catch:tap="addNum">
+          <image src="../../assets/images/jiahao-add.png" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

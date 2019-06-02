@@ -1,4 +1,6 @@
-<collectionScroll wx:if="{{cartList.length > 0}}" cardList="{{cartList}}"
- bind:changeActive="changeActive" bind:likePic="likePic" bind:changeLike = 'changeLike'>
-
-</collectionScroll>
+<slideshow></slideshow>
+<view class="container">
+  <block wx:for="{{imgbtn}}" wx:key="index">
+    <imgbtn  id="imgbtn" item="{{item}}"></imgbtn>
+  </block>
+</view>

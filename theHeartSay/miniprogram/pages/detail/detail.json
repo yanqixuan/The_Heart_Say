@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "productList": "../../components/productList/productList",
+    "modalDlg": "../../components/modalDlg/modalDlg",
+    "collectionScroll":"../../components/collectionScroll/collectionScroll"
+  }
+}

@@ -1,4 +1,0 @@
-<collectionScroll wx:if="{{cartList.length > 0}}" cardList="{{cartList}}"
- bind:changeActive="changeActive" bind:likePic="likePic" bind:changeLike = 'changeLike'>
-
-</collectionScroll>

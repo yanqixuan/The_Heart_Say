@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "collectionScroll":"../../components/collectionScroll/collectionScroll"
+    "slideshow":"../../components/slideshow/slideshow",
+    "imgbtn": "../../components/imgbtn/imgbtn"
   }
 }
