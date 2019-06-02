@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "productList": "../../components/productList/productList",
+    "modalDlg": "../../components/modalDlg/modalDlg"
+  }
 }
