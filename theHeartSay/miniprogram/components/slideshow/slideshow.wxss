@@ -6,39 +6,54 @@
   height: 600rpx;
 }
 .wrapper_s{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
   display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* text-align: center; */
 }
 .wrapper{
   flex: 1;
-  margin-left: 180rpx;
+  /* margin-left: 180rpx; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .wrapper_a{
-  margin-top: 20px;
-  margin-left: 20rpx;
+  /* margin-top: 20px;
+  margin-left: 20rpx; */
+  text-align: center;
 }
 .wrapper_b{
-  margin-top: 20rpx;
+  /* margin-top: 20rpx; */
+  text-align: center;
 }
+
+.card_wrapper {
+  margin-left: 10rpx;
+}
+
 .btn1{
   font-size: 25rpx;
   color:#008000;
   border-radius: 98rpx;
   background-color: #fff;
   box-shadow: 0 0 30rpx #e8e7e7;
-  margin-left: 20rpx;
+  /* margin-left: 20rpx; */
 }
 .btn1_red{
   float: left;
   width: 40rpx;
   height: 25px;
-  margin-top: 5rpx;
+  /* margin-top: 5rpx; */
 }
 .card{
   font-size: 30rpx;
   color:green;
 }
 .box{
-  display: inline-block;
+  /* display: inline-block; */
 }
 .card_wrapper{
   position: relative;

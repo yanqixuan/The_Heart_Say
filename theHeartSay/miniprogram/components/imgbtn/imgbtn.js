@@ -23,7 +23,7 @@ Component({
   methods: {
     click: function(e) {
       wx.navigateTo({
-        url: '../../pages/detail/detail?id=' + e.currentTarget.id
+        url: '../../pages/detail/detail?id=' + e.currentTarget.dataset.id
       })
       console.log(e.currentTarget.id)
     }

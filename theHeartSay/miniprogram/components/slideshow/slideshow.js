@@ -41,6 +41,14 @@ Component({
         showCancel: false
       })
     }
+    },
+    toDetail(e) {
+      // console.log(e)
+      const id = e.currentTarget.dataset.id
+      wx.navigateTo({
+        url: `/pages/detail/detail?id=${id}`
+      });
+        
     }
   }
 })

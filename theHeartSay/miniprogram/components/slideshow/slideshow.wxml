@@ -1,8 +1,8 @@
 <view class="container">
   <view class="swiper-container">
     <swiper class="swiper-box" indicator-dots="{{true}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-      <block wx:for="{{imgUrls}}" wx:key="{{id}}">
-        <swiper-item>
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item bindtap="toDetail" data-id="{{index}}">
           <image src="{{item}}" class="slide-img"/>
         </swiper-item>
       </block>
@@ -24,8 +24,8 @@
   </view>
   <view class="wrapper_b wrapper">
     <view class="card box">收藏卡面</view>
-      <view class="card_wrapper box">
-        <image class="card_Img" src="../../images/card.png" />
-      </view>  
+    <view class="card_wrapper box">
+      <image class="card_Img" src="../../images/card.png" />
+    </view>  
   </view>
 </view>

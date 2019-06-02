@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
   "usingComponents": {
-    "slideshow":"../../components/slideshow/slideshow"
+    "slideshow":"../../components/slideshow/slideshow",
+    "imgbtn": "../../components/imgbtn/imgbtn"
   }
-=======
-    "usingComponents": {
-        "imgbtn": "../../components/imgbtn/imgbtn"
-    }
->>>>>>> 1dea67abbd4daa7f3f542a8c46779224a27098e1
 }
