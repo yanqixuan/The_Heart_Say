@@ -22,10 +22,10 @@ Component({
    */
   methods: {
     click: function(e) {
-      console.log(666)
       wx.navigateTo({
-        url: ''
+        url: '../../pages/detail/detail?id=' + e.currentTarget.id
       })
+      console.log(e.currentTarget.id)
     }
   }
 })
