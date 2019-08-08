@@ -74,8 +74,8 @@ Component({
     getListNum () {
       // return this.data.listNum
       this.triggerEvent('getListNum', {num: this.data.listNum,
-      id: this.properties.productList.id,
-      price: this.properties.productList.price
+                                       id: this.properties.productList.id,
+                                       price: this.properties.productList.price
     })
     }
   }

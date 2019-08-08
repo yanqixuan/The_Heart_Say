@@ -33,7 +33,7 @@ Page({
     }
   })
   },
-// 鄢启轩写的
+
 likePic(e) {
   let btnId = this.data.id;
   const id = e.detail.id;
@@ -50,7 +50,7 @@ likePic(e) {
     }
   })
 },
-  // 贺海写的
+
   getProductData () {
     const id = this.data.id
     wx.request({
